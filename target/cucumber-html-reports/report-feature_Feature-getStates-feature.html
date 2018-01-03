@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: Feature/getStates.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>your-project-name</td>
+            <td>03 Jan 2018, 22:48</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">Feature/getStates.feature</td>
+                    <td      class="passed"    >3</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="703317841">703ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">Feature/getStates.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Sample Karate API Automation</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">703ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get all states of a country</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'http://services.groupkt.com/state/get/IND/all'</span>
+  
+  <span class="lead-duration duration">131ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>22:48:11.205 WARN  - karate-config.js not found on the classpath, skipping bootstrap configuration
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">572ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>22:48:11.237 DEBUG - 
+1 &gt; GET http://services.groupkt.com/state/get/IND/all
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: services.groupkt.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_131)
+
+22:48:11.779 DEBUG - 
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Date: Wed, 03 Jan 2018 17:18:10 GMT
+1 &lt; Expires: 0
+1 &lt; Keep-Alive: timeout=5, max=100
+1 &lt; Pragma: no-cache
+1 &lt; Server: Apache/2.4.25 (Debian)
+1 &lt; Transfer-Encoding: chunked
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-XSS-Protection: 1; mode=block
+{
+  &quot;RestResponse&quot; : {
+    &quot;messages&quot; : [ &quot;Total [36] records found.&quot; ],
+    &quot;result&quot; : [ {
+      &quot;id&quot; : 65,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Jammu and Kashmir&quot;,
+      &quot;abbr&quot; : &quot;JK&quot;,
+      &quot;area&quot; : &quot;12541302SKM&quot;,
+      &quot;largest_city&quot; : &quot;Srinagar Jammu&quot;,
+      &quot;capital&quot; : &quot;Srinagar Jammu&quot;
+    }, {
+      &quot;id&quot; : 66,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Jharkhand&quot;,
+      &quot;abbr&quot; : &quot;JH&quot;,
+      &quot;area&quot; : &quot;32988134SKM&quot;,
+      &quot;largest_city&quot; : &quot;Ranchi&quot;,
+      &quot;capital&quot; : &quot;Ranchi&quot;
+    }, {
+      &quot;id&quot; : 67,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Karnataka&quot;,
+      &quot;abbr&quot; : &quot;KA&quot;,
+      &quot;area&quot; : &quot;61095297SKM&quot;,
+      &quot;largest_city&quot; : &quot;Bangalore&quot;,
+      &quot;capital&quot; : &quot;Bangalore&quot;
+    }, {
+      &quot;id&quot; : 68,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Kerala&quot;,
+      &quot;abbr&quot; : &quot;KL&quot;,
+      &quot;area&quot; : &quot;33406061SKM&quot;,
+      &quot;largest_city&quot; : &quot;Thiruvananthapuram&quot;,
+      &quot;capital&quot; : &quot;Thiruvananthapuram&quot;
+    }, {
+      &quot;id&quot; : 69,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Madhya Pradesh&quot;,
+      &quot;abbr&quot; : &quot;MP&quot;,
+      &quot;area&quot; : &quot;72626809SKM&quot;,
+      &quot;largest_city&quot; : &quot;Bhopal&quot;,
+      &quot;capital&quot; : &quot;Bhopal&quot;
+    }, {
+      &quot;id&quot; : 70,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Maharashtra&quot;,
+      &quot;abbr&quot; : &quot;MH&quot;,
+      &quot;area&quot; : &quot;112374333SKM&quot;,
+      &quot;largest_city&quot; : &quot;Mumbai&quot;,
+      &quot;capital&quot; : &quot;Mumbai&quot;
+    }, {
+      &quot;id&quot; : 71,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Manipur&quot;,
+      &quot;abbr&quot; : &quot;MN&quot;,
+      &quot;area&quot; : &quot;2855794SKM&quot;,
+      &quot;largest_city&quot; : &quot;Imphal&quot;,
+      &quot;capital&quot; : &quot;Imphal&quot;
+    }, {
+      &quot;id&quot; : 72,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Meghalaya&quot;,
+      &quot;abbr&quot; : &quot;ML&quot;,
+      &quot;area&quot; : &quot;2966889SKM&quot;,
+      &quot;largest_city&quot; : &quot;Shillong&quot;,
+      &quot;capital&quot; : &quot;Shillong&quot;
+    }, {
+      &quot;id&quot; : 73,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Mizoram&quot;,
+      &quot;abbr&quot; : &quot;MZ&quot;,
+      &quot;area&quot; : &quot;1097206SKM&quot;,
+      &quot;largest_city&quot; : &quot;Aizawl&quot;,
+      &quot;capital&quot; : &quot;Aizawl&quot;
+    }, {
+      &quot;id&quot; : 74,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Nagaland&quot;,
+      &quot;abbr&quot; : &quot;NL&quot;,
+      &quot;area&quot; : &quot;1978502SKM&quot;,
+      &quot;largest_city&quot; : &quot;Kohima&quot;,
+      &quot;capital&quot; : &quot;Kohima&quot;
+    }, {
+      &quot;id&quot; : 75,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Odisha&quot;,
+      &quot;abbr&quot; : &quot;OD&quot;,
+      &quot;area&quot; : &quot;41974218SKM&quot;,
+      &quot;largest_city&quot; : &quot;Bhubaneswar&quot;,
+      &quot;capital&quot; : &quot;Bhubaneswar&quot;
+    }, {
+      &quot;id&quot; : 76,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Punjab&quot;,
+      &quot;abbr&quot; : &quot;PB&quot;,
+      &quot;area&quot; : &quot;27743338SKM&quot;,
+      &quot;largest_city&quot; : &quot;Chandigarh&quot;,
+      &quot;capital&quot; : &quot;Chandigarh&quot;
+    }, {
+      &quot;id&quot; : 77,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Rajasthan&quot;,
+      &quot;abbr&quot; : &quot;RJ&quot;,
+      &quot;area&quot; : &quot;68548437SKM&quot;,
+      &quot;largest_city&quot; : &quot;Jaipur&quot;,
+      &quot;capital&quot; : &quot;Jaipur&quot;
+    }, {
+      &quot;id&quot; : 78,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Sikkim&quot;,
+      &quot;abbr&quot; : &quot;SK&quot;,
+      &quot;area&quot; : &quot;610577SKM&quot;,
+      &quot;largest_city&quot; : &quot;Gangtok&quot;,
+      &quot;capital&quot; : &quot;Gangtok&quot;
+    }, {
+      &quot;id&quot; : 79,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Tamil Nadu&quot;,
+      &quot;abbr&quot; : &quot;TN&quot;,
+      &quot;area&quot; : &quot;72147030SKM&quot;,
+      &quot;largest_city&quot; : &quot;Chennai&quot;,
+      &quot;capital&quot; : &quot;Chennai&quot;
+    }, {
+      &quot;id&quot; : 80,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Telangana&quot;,
+      &quot;abbr&quot; : &quot;TS&quot;,
+      &quot;area&quot; : &quot;3519397837SKM&quot;,
+      &quot;largest_city&quot; : &quot;Hyderabad&quot;,
+      &quot;capital&quot; : &quot;Hyderabad&quot;
+    }, {
+      &quot;id&quot; : 81,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Tripura&quot;,
+      &quot;abbr&quot; : &quot;TR&quot;,
+      &quot;area&quot; : &quot;3673917SKM&quot;,
+      &quot;largest_city&quot; : &quot;Agartala&quot;,
+      &quot;capital&quot; : &quot;Agartala&quot;
+    }, {
+      &quot;id&quot; : 82,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Uttar Pradesh&quot;,
+      &quot;abbr&quot; : &quot;UP&quot;,
+      &quot;area&quot; : &quot;199812341SKM&quot;,
+      &quot;largest_city&quot; : &quot;Lucknow&quot;,
+      &quot;capital&quot; : &quot;Lucknow&quot;
+    }, {
+      &quot;id&quot; : 83,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Uttarakhand&quot;,
+      &quot;abbr&quot; : &quot;UK&quot;,
+      &quot;area&quot; : &quot;10086292SKM&quot;,
+      &quot;largest_city&quot; : &quot;Dehradun&quot;,
+      &quot;capital&quot; : &quot;Dehradun&quot;
+    }, {
+      &quot;id&quot; : 84,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;West Bengal&quot;,
+      &quot;abbr&quot; : &quot;WB&quot;,
+      &quot;area&quot; : &quot;91276115SKM&quot;,
+      &quot;largest_city&quot; : &quot;Kolkata&quot;,
+      &quot;capital&quot; : &quot;Kolkata&quot;
+    }, {
+      &quot;id&quot; : 85,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Andaman and Nicobar Islands&quot;,
+      &quot;abbr&quot; : &quot;AN&quot;,
+      &quot;area&quot; : &quot;8249SKM&quot;,
+      &quot;largest_city&quot; : &quot;Port Blair&quot;,
+      &quot;capital&quot; : &quot;Port Blair&quot;
+    }, {
+      &quot;id&quot; : 86,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Chandigarh&quot;,
+      &quot;abbr&quot; : &quot;CH&quot;,
+      &quot;area&quot; : &quot;114SKM&quot;,
+      &quot;largest_city&quot; : &quot;Chandigarh&quot;,
+      &quot;capital&quot; : &quot;Chandigarh&quot;
+    }, {
+      &quot;id&quot; : 87,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Dadra and Nagar Haveli&quot;,
+      &quot;abbr&quot; : &quot;DN&quot;,
+      &quot;area&quot; : &quot;491SKM&quot;,
+      &quot;largest_city&quot; : &quot;Silvassa&quot;,
+      &quot;capital&quot; : &quot;Silvassa&quot;
+    }, {
+      &quot;id&quot; : 88,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Daman and Diu&quot;,
+      &quot;abbr&quot; : &quot;DD&quot;,
+      &quot;area&quot; : &quot;112SKM&quot;,
+      &quot;largest_city&quot; : &quot;Daman&quot;,
+      &quot;capital&quot; : &quot;Daman&quot;
+    }, {
+      &quot;id&quot; : 89,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Delhi&quot;,
+      &quot;abbr&quot; : &quot;DL&quot;,
+      &quot;area&quot; : &quot;1490SKM&quot;,
+      &quot;largest_city&quot; : &quot;New Delhi&quot;,
+      &quot;capital&quot; : &quot;New Delhi&quot;
+    }, {
+      &quot;id&quot; : 56,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Andhra Pradesh&quot;,
+      &quot;abbr&quot; : &quot;AP&quot;,
+      &quot;area&quot; : &quot;49506799SKM&quot;,
+      &quot;largest_city&quot; : &quot;Hyderabad Amaravati&quot;,
+      &quot;capital&quot; : &quot;Hyderabad Amaravati&quot;
+    }, {
+      &quot;id&quot; : 57,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Arunachal Pradesh&quot;,
+      &quot;abbr&quot; : &quot;AR&quot;,
+      &quot;area&quot; : &quot;1383727SKM&quot;,
+      &quot;largest_city&quot; : &quot;Itanagar&quot;,
+      &quot;capital&quot; : &quot;Itanagar&quot;
+    }, {
+      &quot;id&quot; : 58,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Assam&quot;,
+      &quot;abbr&quot; : &quot;AS&quot;,
+      &quot;area&quot; : &quot;31205576SKM&quot;,
+      &quot;largest_city&quot; : &quot;Dispur&quot;,
+      &quot;capital&quot; : &quot;Dispur&quot;
+    }, {
+      &quot;id&quot; : 59,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Bihar&quot;,
+      &quot;abbr&quot; : &quot;BR&quot;,
+      &quot;area&quot; : &quot;104099452SKM&quot;,
+      &quot;largest_city&quot; : &quot;Patna&quot;,
+      &quot;capital&quot; : &quot;Patna&quot;
+    }, {
+      &quot;id&quot; : 60,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Chhattisgarh&quot;,
+      &quot;abbr&quot; : &quot;CG&quot;,
+      &quot;area&quot; : &quot;25545198SKM&quot;,
+      &quot;largest_city&quot; : &quot;Naya Raipur&quot;,
+      &quot;capital&quot; : &quot;Naya Raipur&quot;
+    }, {
+      &quot;id&quot; : 61,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Goa&quot;,
+      &quot;abbr&quot; : &quot;GA&quot;,
+      &quot;area&quot; : &quot;1458545SKM&quot;,
+      &quot;largest_city&quot; : &quot;Panaji&quot;,
+      &quot;capital&quot; : &quot;Panaji&quot;
+    }, {
+      &quot;id&quot; : 62,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Gujarat&quot;,
+      &quot;abbr&quot; : &quot;GJ&quot;,
+      &quot;area&quot; : &quot;60439692SKM&quot;,
+      &quot;largest_city&quot; : &quot;Gandhinagar&quot;,
+      &quot;capital&quot; : &quot;Gandhinagar&quot;
+    }, {
+      &quot;id&quot; : 63,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Haryana&quot;,
+      &quot;abbr&quot; : &quot;HR&quot;,
+      &quot;area&quot; : &quot;25351462SKM&quot;,
+      &quot;largest_city&quot; : &quot;Chandigarh&quot;,
+      &quot;capital&quot; : &quot;Chandigarh&quot;
+    }, {
+      &quot;id&quot; : 64,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Himachal Pradesh&quot;,
+      &quot;abbr&quot; : &quot;HP&quot;,
+      &quot;area&quot; : &quot;6864602SKM&quot;,
+      &quot;largest_city&quot; : &quot;Shimla Dharamshala&quot;,
+      &quot;capital&quot; : &quot;Shimla Dharamshala&quot;
+    }, {
+      &quot;id&quot; : 90,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Lakshadweep&quot;,
+      &quot;abbr&quot; : &quot;LD&quot;,
+      &quot;area&quot; : &quot;32SKM&quot;,
+      &quot;largest_city&quot; : &quot;Kavaratti&quot;,
+      &quot;capital&quot; : &quot;Kavaratti&quot;
+    }, {
+      &quot;id&quot; : 91,
+      &quot;country&quot; : &quot;IND&quot;,
+      &quot;name&quot; : &quot;Puducherry&quot;,
+      &quot;abbr&quot; : &quot;PY&quot;,
+      &quot;area&quot; : &quot;492SKM&quot;,
+      &quot;largest_city&quot; : &quot;Pondicherry&quot;,
+      &quot;capital&quot; : &quot;Pondicherry&quot;
+    } ]
+  }
+}
+
+22:48:11.795 DEBUG - response time in milliseconds: 574
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

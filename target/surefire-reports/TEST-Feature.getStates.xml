@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="Sample Karate API Automation" skipped="0" tests="1" time="0.703318">
+<testcase classname="Feature.getStates" name="Get all states of a country" time="0.703318">
+<system-out><![CDATA[Given url 'http://services.groupkt.com/state/get/IND/all'...................passed
+When method get.............................................................passed
+Then status 200.............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
