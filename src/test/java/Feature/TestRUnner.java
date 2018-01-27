@@ -18,7 +18,10 @@ public class TestRUnner {
     public void testCallingClasspathFeatureFromJava() {
         Map<String, Object> args = new HashMap();
         args.put("name", "World");
+        for(int i=1 ;i<3;i++)
+        {
         Map<String, Object> result = CucumberRunner.runClasspathFeature("Feature/getStates.feature", args, true);
         //assertEquals("Hello World", result.get("greeting"));
 } 
+    }
 }
