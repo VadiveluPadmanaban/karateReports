@@ -61,14 +61,15 @@ String data = "{\"store\":{\"book\":[{\"category\":\"reference\",\"author\":\"Ni
 JSONObject json = new JSONObject(data);    
 System.out.println(json.toString(2));
 listJson(json);
-String htmlPage ="<html><head style='background-color:#ccc'><b><h3><center><u>Mobile Phones</u></center></h3></b><link rel='StyleSheet' type='text/css' href='style.css' /><script type='text/javascript' src='scripts/json-min.js'></script><script type='text/javascript' src='scripts/BubbleTooltips.js'></script><script type='text/javascript' src='scripts/parse.js'></script></head>";
+String htmlPage ="<html><head style='background-color:light blue'><b><h3><center><u>JSON VALUES</u></center></h3></b><link rel='StyleSheet' type='text/css' href='style.css' /><script type='text/javascript' src='scripts/json-min.js'></script><script type='text/javascript' src='scripts/BubbleTooltips.js'></script><script type='text/javascript' src='scripts/parse.js'></script></head>";
 
 bufferedWriter.write(htmlPage);
 
-//bufferedWriter.append("<strong><h4>Mobile Phone Companies</h4></strong><ul><li>Apple</li><li>Samsung</li><li>Nokia</li></ul>"); 
+ 
 
-bufferedWriter.append("<table style='border: 1px solid black'>");
+bufferedWriter.append("<table style='border: 2px solid black; border-radius: 5px;width:50%;margin:auto'>");
 StringBuilder sb=new StringBuilder();
+bufferedWriter.append("<tr><th style=' background-color: #4CAF50;color: white'>ParentNode</th><th style=' background-color: #4CAF50;color: white'>Key</th><th style=' background-color: #4CAF50;color: white'>Value</th></tr>");
 for(int i=0;i<al.size();i++)
 {
 	String k,parent="";
@@ -83,7 +84,7 @@ for(int i=0;i<al.size();i++)
 	parent=value[0].substring(0,value[0].length()- k.length()-1);}else
 		 k=value[0];
 	System.out.println("parent-"+parent+" Key-"+k+" value-"+value[1]);
-	sb.append("<tr style='background-color: #f2f2f2'><td style='border: 1px solid black'>"+parent+"</td><td style='border: 1px solid black'>"+k+"</td><td style='border: 1px solid black'>"+value[1]+"</td></tr>");
+	sb.append("<tr><td style='border: 1px solid black'>"+parent+"</td><td style='border: 1px solid black'>"+k+"</td><td style='border: 1px solid black'>"+value[1]+"</td></tr>");
 	
 }
 /*
